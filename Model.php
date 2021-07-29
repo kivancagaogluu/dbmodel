@@ -109,6 +109,7 @@ class Model extends PDO
             'value' => $value,
             'operator' => $operator
         ];
+        return $this;
     }
 
     public function join($side, $table, $on)
