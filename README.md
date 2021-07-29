@@ -27,9 +27,7 @@ Get one row
 
 ```php
 
-$model->setTable('users');
-$model->select();
-$model->where('user_id','1');
+$model->setTable('users')->select()->where('user_id','1');
 $result = $model->get();
 ```
 
