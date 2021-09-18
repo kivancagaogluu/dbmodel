@@ -43,11 +43,10 @@ $result = $model->getAll();
 ## Insert Examples
 
 ```php
-$model->setTable('users');
-$model->insert([
-    'username' => 'User',
-    'user_email' => 'mail@example.com',
-]);
+$model->setTable('users')->insert([
+            'username' => 'User',
+            'user_email' => 'mail@example.com',
+        ]);
 
 $userId = $model->insertId();
 ```
